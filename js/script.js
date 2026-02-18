@@ -1,38 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const navbar = document.querySelector(".custom-navbar");
-
-  if (navbar) {
-    function handleScroll() {
-      navbar.classList.toggle("scrolled", window.scrollY > 80);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-  }
-
   const navLinks = document.querySelectorAll(".nav-link");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
+  const sections = document.querySelectorAll("section");
+  const navbarCollapse = document.getElementById("mainMenu");
 
-  if (navbarCollapse) {
+  /* ================= SCROLL EFFECT ================= */
+
+  function handleScroll() {
+    navbar.classList.toggle("scrolled", window.scrollY > 80);
+
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
     navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        if (navbarCollapse.classList.contains("show")) {
-          new bootstrap.Collapse(navbarCollapse).hide();
-        }
-      });
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
     });
   }
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
+  window.addEventListener("scroll", handleScroll);
 
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+  /* ================= CLOSE MOBILE MENU ON CLICK ================= */
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
       }
     });
   });

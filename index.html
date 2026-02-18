@@ -20,48 +20,60 @@
     />
   </head>
   <body>
-    <!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-dark">
-      <div class="container">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="#">
-          <img src="./images/logo.png" alt="Logo" class="nav-logo" />
-        </a>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-dark">
+  <div class="container">
 
-        <!-- TOGGLER -->
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainMenu"
-          aria-controls="mainMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#home">
+      <img src="./images/logo.png" alt="Logo" class="nav-logo" />
+    </a>
 
-        <!-- MENU -->
-        <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-              <a href="#" class="btn btn-gold">Book Now</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- TOGGLER -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainMenu"
+      aria-controls="mainMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+        <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-gold">Book Now</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
 
     <!-- ================= HERO ================= -->
 
@@ -140,63 +152,59 @@
       </div>
     </section>
 
-  <!-- ================= SERVICES SECTION ================= -->
-<section class="services-section">
+<!-- ================= SERVICES SECTION ================= -->
+<section class="services-section" id="services">
 
   <!-- Background Pattern -->
   <div class="services-pattern"></div>
   <div class="services-glow"></div>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="text-center mb-5">
       <h2 class="services-title">Our Services</h2>
     </div>
 
-    <div
-      class="row align-items-center justify-content-center g-0 services-wrapper"
-    >
-      <!-- LEFT IMAGE -->
-      <div class="col-lg-3 d-none d-lg-block">
-        <div class="service-side-image">
-          <img src="./images/Restaurant.jpg" alt="Restaurant Service" />
-        </div>
-      </div>
+    <div class="row g-4 justify-content-center">
 
-      <!-- CENTER CONTENT -->
-      <div class="col-lg-6 px-4">
-        <div class="row g-4 text-center">
+      <!-- Service Card 1 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-card">
 
-          <!-- Card 1 -->
-          <div class="col-md-6">
-            <div class="service-card">
-              <h3>Restaurant Services</h3>
-              <p>
-                Experience fine dining with premium ingredients, elegant
-                ambiance, and expertly crafted culinary creations.
-              </p>
-              <a href="#" class="btn btn-service">View Details</a>
-            </div>
+          <div class="service-img">
+            <img src="./images/Restaurant.jpg" alt="Restaurant Service">
+            <div class="service-overlay"></div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="col-md-6">
-            <div class="service-card">
-              <h3>Catering Services</h3>
-              <p>
-                Luxury catering tailored for weddings, corporate gatherings,
-                and private celebrations with unmatched quality.
-              </p>
-              <a href="#" class="btn btn-service">View Details</a>
-            </div>
+          <div class="service-content">
+            <h3>Restaurant Services</h3>
+            <p>
+              Experience fine dining with premium ingredients, elegant
+              ambiance, and expertly crafted culinary creations.
+            </p>
+            <a href="#" class="btn btn-service">View Details</a>
           </div>
 
         </div>
       </div>
 
-      <!-- RIGHT IMAGE -->
-      <div class="col-lg-3 d-none d-lg-block">
-        <div class="service-side-image">
-          <img src="./images/Catering.jpg" alt="Catering Service" />
+      <!-- Service Card 2 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-card">
+
+          <div class="service-img">
+            <img src="./images/Catering.jpg" alt="Catering Service">
+            <div class="service-overlay"></div>
+          </div>
+
+          <div class="service-content">
+            <h3>Catering Services</h3>
+            <p>
+              Luxury catering tailored for weddings, corporate gatherings,
+              and private celebrations with unmatched quality.
+            </p>
+            <a href="#" class="btn btn-service">View Details</a>
+          </div>
+
         </div>
       </div>
 
@@ -238,7 +246,7 @@
 
 <!-- ================= CONTACT SECTION ================= -->
 
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
   <!-- Background Effects -->
   <div class="contact-glow"></div>

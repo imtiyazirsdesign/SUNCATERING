@@ -6,36 +6,48 @@ body {
   color: #fff;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
 }
 
 /* ================= NAVBAR ================= */
 
 .custom-navbar {
-  padding: 18px 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
   transition: 0.4s ease;
+  border-bottom: 1px solid rgba(198, 167, 94, 0.1);
+  height: 90px;
 }
 
 .custom-navbar.scrolled {
   background: #000;
-  padding: 12px 0;
+  padding: 14px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .nav-logo {
-  height: 70px;
+  height: 100px;
+  transition: 0.3s ease;
 }
 
+.custom-navbar.scrolled .nav-logo {
+  height: 100px;
+}
+
+/* NAV LINKS */
 .nav-link {
   color: #fff !important;
-  margin-left: 25px;
+  margin-left: 30px;
   font-weight: 500;
   position: relative;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
 }
 
+/* Gold underline animation */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -43,16 +55,54 @@ h1, h2 {
   bottom: -6px;
   width: 0%;
   height: 2px;
-  background: #C6A75E;
+  background: #c6a75e;
   transition: 0.3s ease;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #c6a75e !important;
 }
 
 .nav-link:hover::after {
   width: 100%;
 }
 
-.nav-link:hover {
-  color: #C6A75E !important;
+/* ACTIVE LINK */
+.nav-link.active {
+  color: #c6a75e !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Toggler Icon */
+.navbar-toggler {
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ================= MOBILE MENU ================= */
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #000;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    margin: 12px 0;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
 }
 
 /* ================= HERO ================= */
@@ -67,7 +117,11 @@ h1, h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.466));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.438),
+    rgba(0, 0, 0, 0.466)
+  );
   top: 0;
   left: 0;
 }
@@ -79,7 +133,7 @@ h1, h2 {
 }
 
 .hero-subtitle {
-  color: #C6A75E;
+  color: #c6a75e;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 14px;
@@ -109,7 +163,7 @@ h1, h2 {
 /* ================= BUTTONS ================= */
 
 .btn-gold {
-  background: #C6A75E !important;
+  background: #c6a75e !important;
   color: #000 !important;
   padding: 14px 38px !important;
   border-radius: 50px !important;
@@ -123,8 +177,8 @@ h1, h2 {
 }
 
 .btn-outline-gold {
-  border: 2px solid #C6A75E !important;
-  color: #C6A75E !important;
+  border: 2px solid #c6a75e !important;
+  color: #c6a75e !important;
   padding: 14px 38px;
   border-radius: 50px;
   font-weight: 600;
@@ -132,7 +186,7 @@ h1, h2 {
 }
 
 .btn-outline-gold:hover {
-  background: #C6A75E !important;
+  background: #c6a75e !important;
   color: #000 !important;
   transform: translateY(-4px) !important;
 }
@@ -173,7 +227,11 @@ h1, h2 {
   position: absolute;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(198,167,94,0.18) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(198, 167, 94, 0.18) 0%,
+    transparent 70%
+  );
   top: -200px;
   right: -200px;
   z-index: 0;
@@ -184,7 +242,7 @@ h1, h2 {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: #C6A75E;
+  background: #c6a75e;
   opacity: 0.05;
   border-radius: 60% 40% 70% 30% / 30% 60% 40% 70%;
   bottom: -150px;
@@ -222,7 +280,7 @@ h1, h2 {
   border-radius: 20px;
   position: relative;
   z-index: 2;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
   transition: 0.4s ease;
 }
 
@@ -234,7 +292,7 @@ h1, h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px solid #C6A75E;
+  border: 3px solid #c6a75e;
   border-radius: 20px;
   top: 25px;
   left: 25px;
@@ -248,7 +306,7 @@ h1, h2 {
 }
 
 .section-subtitle {
-  color: #C6A75E;
+  color: #c6a75e;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 14px;
@@ -262,7 +320,7 @@ h1, h2 {
 }
 
 .text-gold {
-  background: linear-gradient(45deg, #C6A75E, #f5e6b0);
+  background: linear-gradient(45deg, #c6a75e, #f5e6b0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -277,7 +335,7 @@ h1, h2 {
 /* ================= BUTTONS ================= */
 
 .btn-gold {
-  background: #C6A75E;
+  background: #c6a75e;
   color: #111;
   padding: 12px 32px;
   border-radius: 30px;
@@ -291,8 +349,8 @@ h1, h2 {
 }
 
 .btn-outline-gold {
-  border: 2px solid #C6A75E;
-  color: #C6A75E;
+  border: 2px solid #c6a75e;
+  color: #c6a75e;
   padding: 12px 32px;
   border-radius: 30px;
   font-weight: 600;
@@ -300,14 +358,13 @@ h1, h2 {
 }
 
 .btn-outline-gold:hover {
-  background: #C6A75E;
+  background: #c6a75e;
   color: #111;
 }
 
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
-
   .about-section {
     padding: 80px 0;
     text-align: center;
@@ -340,8 +397,7 @@ h1, h2 {
   overflow: hidden;
 }
 
-/* ================= BACKGROUND GLOW ================= */
-
+/* Background Glow */
 .services-glow {
   position: absolute;
   width: 600px;
@@ -352,70 +408,74 @@ h1, h2 {
   z-index: 0;
 }
 
-/* ================= PROFESSIONAL GOLD LINE PATTERN ================= */
-
+/* Gold Grid Pattern */
 .services-pattern {
   position: absolute;
   inset: 0;
-  background-image: 
+  background-image:
     linear-gradient(rgba(198,167,94,0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(198,167,94,0.05) 1px, transparent 1px);
   background-size: 80px 80px;
   z-index: 0;
 }
 
-/* Keep Content Above Pattern */
-.services-section .container-fluid {
+.services-section .container {
   position: relative;
   z-index: 2;
 }
 
-/* ================= TITLE ================= */
-
+/* Title */
 .services-title {
   font-family: "Playfair Display", serif;
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #C6A75E;
+  color: #c6a75e;
   letter-spacing: 2px;
 }
 
-/* ================= SIDE IMAGES ================= */
+/* ================= SERVICE CARD ================= */
 
-.service-side-image {
-  height: 480px;
-  overflow: hidden;
-  position: relative;
+.service-card {
+  background: #1a1a1a;
   border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(198,167,94,0.15);
+  transition: 0.4s ease;
+  height: 100%;
 }
 
-.service-side-image img {
+/* Image Section */
+.service-img {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.service-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.6s ease;
 }
 
-.service-side-image:hover img {
-  transform: scale(1.08);
+/* Dark Overlay */
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
-/* ================= SERVICE CARDS ================= */
-
-.service-card {
-  background: #1a1a1a;
-  padding: 50px 35px;
-  border-radius: 20px;
-  border: 1px solid rgba(198,167,94,0.15);
-  transition: 0.4s ease;
-  height: 100%;
+/* Content */
+.service-content {
+  padding: 35px;
+  text-align: center;
 }
 
 .service-card h3 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
@@ -423,25 +483,28 @@ h1, h2 {
   color: #bbb;
   font-size: 15px;
   line-height: 1.7;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-/* Hover Effect */
+/* Hover Effects */
 .service-card:hover {
   transform: translateY(-12px);
-  border-color: #C6A75E;
+  border-color: #c6a75e;
   box-shadow: 0 25px 60px rgba(198,167,94,0.15);
 }
 
-/* ================= BUTTON ================= */
+.service-card:hover .service-img img {
+  transform: scale(1.08);
+}
 
+/* Button */
 .btn-service {
-  background: #C6A75E !important;
+  background: #c6a75e !important;
   color: #111 !important;
   padding: 12px 32px !important;
   border-radius: 40px !important;
-  transition: 0.3s ease !important;
   font-weight: 600 !important;
+  transition: 0.3s ease !important;
 }
 
 .btn-service:hover {
@@ -449,10 +512,8 @@ h1, h2 {
   color: #111 !important;
 }
 
-/* ================= RESPONSIVE ================= */
-
+/* Responsive */
 @media (max-width: 992px) {
-
   .services-section {
     padding: 80px 0;
   }
@@ -461,8 +522,8 @@ h1, h2 {
     font-size: 32px;
   }
 
-  .service-card {
-    padding: 35px 25px;
+  .service-content {
+    padding: 25px;
   }
 
   .services-glow {
@@ -487,7 +548,7 @@ h1, h2 {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.144),
     rgba(0, 0, 0, 0.7)
   );
   z-index: 1;
@@ -498,7 +559,11 @@ h1, h2 {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(198,167,94,0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(198, 167, 94, 0.2) 0%,
+    transparent 70%
+  );
   top: -200px;
   right: -200px;
   z-index: 0;
@@ -508,7 +573,10 @@ h1, h2 {
 .discount-pattern {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(198,167,94,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(
+    rgba(198, 167, 94, 0.08) 1px,
+    transparent 1px
+  );
   background-size: 25px 25px;
   z-index: 0;
 }
@@ -531,7 +599,7 @@ h1, h2 {
 }
 
 .discount-heading span {
-  background: linear-gradient(45deg, #C6A75E, #f5e6b0);
+  background: linear-gradient(45deg, #c6a75e, #f5e6b0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -542,10 +610,10 @@ h1, h2 {
   padding: 30px 80px;
   margin: 25px 0;
   border-radius: 15px;
-  background: rgba(198,167,94,0.08);
+  background: rgba(198, 167, 94, 0.08);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(198,167,94,0.4);
-  box-shadow: 0 20px 50px rgba(198,167,94,0.15);
+  border: 1px solid rgba(198, 167, 94, 0.4);
+  box-shadow: 0 20px 50px rgba(198, 167, 94, 0.15);
 }
 
 .discount-badge h3 {
@@ -553,7 +621,7 @@ h1, h2 {
   font-family: "Playfair Display", serif;
   margin: 0;
   letter-spacing: 3px;
-  color: #C6A75E;
+  color: #c6a75e;
 }
 
 /* Subtitle */
@@ -566,7 +634,7 @@ h1, h2 {
 
 /* Gold Button */
 .btn-gold {
-  background: #C6A75E;
+  background: #c6a75e;
   color: #111;
   padding: 14px 45px;
   border-radius: 50px;
@@ -631,7 +699,11 @@ h1, h2 {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(198,167,94,0.15) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(198, 167, 94, 0.15) 0%,
+    transparent 70%
+  );
   top: -200px;
   left: -200px;
   z-index: 0;
@@ -641,9 +713,9 @@ h1, h2 {
 .contact-pattern {
   position: absolute;
   inset: 0;
-  background-image: 
-    linear-gradient(45deg, rgba(198,167,94,0.04) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(198,167,94,0.04) 25%, transparent 25%);
+  background-image:
+    linear-gradient(45deg, rgba(198, 167, 94, 0.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(198, 167, 94, 0.04) 25%, transparent 25%);
   background-size: 60px 60px;
   z-index: 0;
 }
@@ -661,7 +733,7 @@ h1, h2 {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #C6A75E;
+  color: #c6a75e;
   letter-spacing: 2px;
 }
 
@@ -677,7 +749,7 @@ h1, h2 {
 .brand-title {
   font-size: 26px;
   letter-spacing: 3px;
-  color: #C6A75E;
+  color: #c6a75e;
 }
 
 .contact-box p {
@@ -706,11 +778,11 @@ h1, h2 {
 
 .social-links a i {
   margin-right: 10px;
-  color: #C6A75E;
+  color: #c6a75e;
 }
 
 .social-links a:hover {
-  color: #C6A75E;
+  color: #c6a75e;
   transform: translateX(6px);
 }
 
@@ -728,13 +800,13 @@ h1, h2 {
 
 .contact-info i {
   margin-right: 10px;
-  color: #C6A75E;
+  color: #c6a75e;
 }
 
 /* ================= FOOTER BOTTOM ================= */
 
 .footer-bottom {
-  border-top: 1px solid rgba(198,167,94,0.2);
+  border-top: 1px solid rgba(198, 167, 94, 0.2);
   padding-top: 25px;
   font-size: 14px;
   color: #888;
@@ -744,7 +816,6 @@ h1, h2 {
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
-
   .contact-title {
     font-size: 32px;
   }
