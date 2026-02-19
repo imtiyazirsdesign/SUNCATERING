@@ -20,63 +20,56 @@
     />
   </head>
   <body>
-<!-- ================= NAVBAR ================= -->
+    
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-dark">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#home">
+          <img src="./images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
 
-<nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-dark">
-  <div class="container">
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- LOGO -->
-    <a class="navbar-brand" href="#home">
-      <img src="./images/logo.png" alt="Logo" class="nav-logo" />
-    </a>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
 
-    <!-- TOGGLER -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainMenu"
-      aria-controls="mainMenu"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-    <!-- MENU -->
-    <div class="collapse navbar-collapse" id="mainMenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-
-        <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-          <a href="#" class="btn btn-gold">Book Now</a>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-
+            <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+              <a href="#" class="btn btn-gold">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- ================= HERO ================= -->
-
     <section id="home" class="hero-section">
       <div class="overlay-dark"></div>
 
@@ -152,157 +145,147 @@
       </div>
     </section>
 
-<!-- ================= SERVICES SECTION ================= -->
-<section class="services-section" id="services">
+    <!-- ================= SERVICES SECTION ================= -->
+    <section class="services-section" id="services">
+      <!-- Background Pattern -->
+      <div class="services-pattern"></div>
+      <div class="services-glow"></div>
 
-  <!-- Background Pattern -->
-  <div class="services-pattern"></div>
-  <div class="services-glow"></div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="services-title">Our Services</h2>
+        </div>
 
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="services-title">Our Services</h2>
-    </div>
+        <div class="row g-4 justify-content-center">
+          <!-- Service Card 1 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="./images/Restaurant.jpg" alt="Restaurant Service" />
+                <div class="service-overlay"></div>
+              </div>
 
-    <div class="row g-4 justify-content-center">
-
-      <!-- Service Card 1 -->
-      <div class="col-lg-6 col-md-6">
-        <div class="service-card">
-
-          <div class="service-img">
-            <img src="./images/Restaurant.jpg" alt="Restaurant Service">
-            <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Restaurant Services</h3>
+                <p>
+                  Experience fine dining with premium ingredients, elegant
+                  ambiance, and expertly crafted culinary creations.
+                </p>
+                <a href="#" class="btn btn-service">View Details</a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-content">
-            <h3>Restaurant Services</h3>
-            <p>
-              Experience fine dining with premium ingredients, elegant
-              ambiance, and expertly crafted culinary creations.
-            </p>
-            <a href="#" class="btn btn-service">View Details</a>
-          </div>
+          <!-- Service Card 2 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="./images/Catering.jpg" alt="Catering Service" />
+                <div class="service-overlay"></div>
+              </div>
 
+              <div class="service-content">
+                <h3>Catering Services</h3>
+                <p>
+                  Luxury catering tailored for weddings, corporate gatherings,
+                  and private celebrations with unmatched quality.
+                </p>
+                <a href="#" class="btn btn-service">View Details</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- ================= DISCOUNT CTA SECTION ================= -->
+    <section class="discount-section">
+      <!-- Background Glow -->
+      <div class="discount-glow"></div>
+      <div class="discount-pattern"></div>
 
-      <!-- Service Card 2 -->
-      <div class="col-lg-6 col-md-6">
-        <div class="service-card">
+      <div class="discount-overlay"></div>
 
-          <div class="service-img">
-            <img src="./images/Catering.jpg" alt="Catering Service">
-            <div class="service-overlay"></div>
+      <div class="container">
+        <div class="discount-content text-center">
+          <h2 class="discount-heading">
+            Enjoy Your <span>Family & Friends</span>
+          </h2>
+
+          <div class="discount-badge">
+            <h3>25% OFF</h3>
           </div>
 
-          <div class="service-content">
-            <h3>Catering Services</h3>
-            <p>
-              Luxury catering tailored for weddings, corporate gatherings,
-              and private celebrations with unmatched quality.
-            </p>
-            <a href="#" class="btn btn-service">View Details</a>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= DISCOUNT CTA SECTION ================= -->
-
-<section class="discount-section">
-
-  <!-- Background Glow -->
-  <div class="discount-glow"></div>
-  <div class="discount-pattern"></div>
-
-  <div class="discount-overlay"></div>
-
-  <div class="container">
-    <div class="discount-content text-center">
-
-      <h2 class="discount-heading">
-        Enjoy Your <span>Family & Friends</span>
-      </h2>
-
-      <div class="discount-badge">
-        <h3>25% OFF</h3>
-      </div>
-
-      <p class="discount-subtitle">
-        Perfect For Family Parties & Special Occasions
-      </p>
-
-      <a href="#" class="btn btn-gold mt-4">Reserve Your Table</a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT SECTION ================= -->
-
-<section class="contact-section" id="contact">
-
-  <!-- Background Effects -->
-  <div class="contact-glow"></div>
-  <div class="contact-pattern"></div>
-  <div class="contact-overlay"></div>
-
-  <div class="container">
-    <h2 class="contact-title text-center">Contact</h2>
-
-    <div class="row mt-5">
-
-      <!-- Brand Column -->
-      <div class="col-lg-4 mb-4">
-        <div class="contact-box">
-          <h4 class="brand-title">SUN CATERING</h4>
-          <p>
-            We deliver exceptional culinary experiences with elegance,
-            passion, and world-class hospitality for your most memorable
-            celebrations.
+          <p class="discount-subtitle">
+            Perfect For Family Parties & Special Occasions
           </p>
+
+          <a href="#" class="btn btn-gold mt-4">Reserve Your Table</a>
         </div>
       </div>
+    </section>
+    <!-- ================= CONTACT SECTION ================= -->
 
-      <!-- Social Column -->
-      <div class="col-lg-4 mb-4">
-        <div class="contact-box">
-          <h5>Follow Us</h5>
-          <ul class="social-links">
-            <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
-            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="bi bi-youtube"></i> YouTube</a></li>
-          </ul>
+    <section class="contact-section" id="contact">
+      <!-- Background Effects -->
+      <div class="contact-glow"></div>
+      <div class="contact-pattern"></div>
+      <div class="contact-overlay"></div>
+
+      <div class="container">
+        <h2 class="contact-title text-center">Contact</h2>
+
+        <div class="row mt-5">
+          <!-- Brand Column -->
+          <div class="col-lg-4 mb-4">
+            <div class="contact-box">
+              <h4 class="brand-title">SUN CATERING</h4>
+              <p>
+                We deliver exceptional culinary experiences with elegance,
+                passion, and world-class hospitality for your most memorable
+                celebrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Social Column -->
+          <div class="col-lg-4 mb-4">
+            <div class="contact-box">
+              <h5>Follow Us</h5>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-youtube"></i> YouTube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info Column -->
+          <div class="col-lg-4 mb-4">
+            <div class="contact-box">
+              <h5>Get In Touch</h5>
+              <ul class="contact-info">
+                <li><i class="bi bi-telephone"></i> +91 99035 6896</li>
+                <li><i class="bi bi-envelope"></i> info@suncatering.com</li>
+                <li><i class="bi bi-geo-alt"></i> XYZ City, India</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center mt-5">
+          <p>© 2025 Sun Catering. All Rights Reserved.</p>
         </div>
       </div>
-
-      <!-- Contact Info Column -->
-      <div class="col-lg-4 mb-4">
-        <div class="contact-box">
-          <h5>Get In Touch</h5>
-          <ul class="contact-info">
-            <li><i class="bi bi-telephone"></i> +91 99035 6896</li>
-            <li><i class="bi bi-envelope"></i> info@suncatering.com</li>
-            <li><i class="bi bi-geo-alt"></i> XYZ City, India</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom text-center mt-5">
-      <p>© 2025 Sun Catering. All Rights Reserved.</p>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <script src="./js/script.js"></script>
   </body>
