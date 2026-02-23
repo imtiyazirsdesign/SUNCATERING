@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant-service</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./css/restaurant-service.css" />
+  </head>
+  <body>
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row text-center text-lg-start">
+          <div class="col-lg-4 col-12 top-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+          </div>
+
+          <div class="col-lg-4 col-12 top-item">
+            <i class="bi bi-telephone"></i>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+          </div>
+
+          <div class="col-lg-4 col-12 top-item">
+            <i class="bi bi-clock"></i>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-navbar">
+      <div class="container">
+        <!-- Search (Desktop) -->
+        <div class="search-box d-none d-lg-flex">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search Any Queries" />
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarMenu"
+        >
+          <ul class="navbar-nav align-items-lg-center text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+
+          <!-- Mobile Search -->
+          <div class="search-box d-lg-none mt-3">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Any Queries" />
+          </div>
+
+          <!-- CTA -->
+          <a href="#" class="btn btn-book ms-lg-4 mt-3 mt-lg-0">Book A Table</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section">
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <!-- Top Icon -->
+        <div class="hero-icon">
+          <img src="./images/Frame 46.png" alt="" />
+        </div>
+
+        <h1>WELCOME TO OUR RESTAURANT</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Et sit adipiscing sit sapien.
+          Enim mattis tortor non in nisi fermentum.
+        </p>
+
+        <a href="#" class="btn-hero">Learn More</a>
+      </div>
+    </section>
+
+    <!-- restaurant-split -->
+    <section class="restaurant-split">
+      <!-- LEFT SIDE -->
+      <div class="split-left">
+        <!-- Decorative Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+
+        <div class="left-content">
+          <span class="subtitle">Taste of</span>
+          <h2>OUR RESTAURANT</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe
+            dolorem vitae sit dignissimos autem. We deliver exceptional culinary
+            experiences with elegance, passion, and world-class hospitality for
+            your most memorable celebrations. We deliver exceptional culinary
+            experiences with elegance, passion, and world-class hospitality for
+            your most memorable celebrations. We deliver exceptional culinary
+            experiences with elegance, passion, and world-class hospitality for
+            your most memorable celebrations. We deliver exceptional culinary
+            experiences with elegance, passion, and world-class hospitality for
+            your most memorable celebrations.
+          </p>
+
+          <a href="#" class="btn-modern">OUR STORY</a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="split-right">
+        <img src="./images/res-about.jpg" alt="Restaurant Interior" />
+      </div>
+    </section>
+
+    <!-- services-modern -->
+    <section class="services-modern">
+      <!-- LEFT IMAGE -->
+      <div class="services-image">
+        <img src="./images/resservice.jpg" alt="Restaurant Food" />
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="services-content">
+        <!-- Decorative Shapes -->
+        <div class="bg-shape"></div>
+        <div class="bg-shape-2"></div>
+        <div class="bg-shape-3"></div>
+
+        <div class="content-box">
+          <span class="section-subtitle">Delicious & Fresh</span>
+          <h2>OUR SERVICES</h2>
+
+          <div class="divider"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A wide
+            selection of premium dishes prepared with freLorem ipsum dolor sit
+            amet consectetur adipisicing elit. A wide selection of premium
+            dishes prepared with fresh ingredients and served with exceptional
+            hospitality.sh ingredients and served with exceptional hospitality.
+          </p>
+
+          <a href="#" class="btn-service">DISCOVER MORE</a>
+        </div>
+      </div>
+    </section>
+    <!-- ================= MODERN MENU SECTION ================= -->
+    <section class="menu-modern">
+      <div class="menu-container">
+        <!-- LEFT CONTENT -->
+        <div class="menu-content">
+          <span class="menu-subtitle">Discover</span>
+          <h2>OUR SPECIAL MENU</h2>
+
+          <div class="menu-divider"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Premium
+            dishes crafted with fresh ingredients and authentic flavors that
+            deliver an unforgettable dining experience. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Premium dishes crafted with fresh
+            ingredients and authentic flavors that deliver an unforgettable
+            dining experience.
+          </p>
+
+          <a href="#" class="btn-menu">VIEW MENU</a>
+        </div>
+
+        <!-- RIGHT IMAGE GRID -->
+        <div class="menu-grid">
+          <div class="grid-item large">
+            <img src="./images/menu1.jpg" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/menu2.jpg" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/menu3.jpg" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/menu1.jpg" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/menu2.jpg" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/menu3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DRINKS SECTION ================= -->
+    <section class="drinks-section">
+      <div class="drinks-overlay"></div>
+
+      <div class="drinks-content">
+        <h2>
+          Need A Quality <span>&</span><br />
+          Tasty Drinks ?
+        </h2>
+
+        <p>Find out royal drinks</p>
+
+        <a href="#" class="btn-drinks">ORDER NOW</a>
+      </div>
+    </section>
+
+    <!-- ================= RESERVATION SECTION ================= -->
+    <section class="reservation-section">
+      <div class="reservation-overlay"></div>
+
+      <div class="reservation-container">
+        <!-- Decorative Shapes -->
+        <div class="res-shape res-shape-1"></div>
+        <div class="res-shape res-shape-2"></div>
+        <div class="res-shape res-shape-3"></div>
+
+        <div class="reservation-header">
+          <h2>Make a Reservation</h2>
+          <p>Book a table online. Leads will reach you in email</p>
+        </div>
+
+        <form class="reservation-form">
+          <div class="form-group">
+            <label>Date</label>
+            <div class="input-box">
+              <input type="date" />
+              <i class="bi bi-calendar"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Your Name</label>
+            <div class="input-box">
+              <input type="text" placeholder="Full Name" />
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Time</label>
+            <div class="input-box">
+              <input type="time" />
+              <i class="bi bi-clock"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <div class="input-box">
+              <input type="email" placeholder="Your Email ID" />
+              <i class="bi bi-envelope"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Guests</label>
+            <div class="input-box">
+              <input type="number" placeholder="How many of you?" />
+              <i class="bi bi-people"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Phone No</label>
+            <div class="input-box">
+              <input type="tel" placeholder="Enter Your Ph No" />
+              <i class="bi bi-telephone"></i>
+            </div>
+          </div>
+
+          <div class="form-btn">
+            <button type="submit" class="btn-reserve">Book Table</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL SECTION ================= -->
+    <section class="testimonial-section">
+      <div class="testimonial-overlay"></div>
+
+      <div class="testimonial-container">
+        <div class="section-header">
+          <h2>TESTIMONIALS</h2>
+          <p>What Clients Say</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  sed non nisi rhoncus aliquet quis. Justo nunc aliquet justo
+                  sit et libero. Quisque lacus malesuada massa praesent sapien
+                  risus.
+                </p>
+                <h4>Angela Ray</h4>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <p>
+                  Amazing food and excellent service. The atmosphere was warm
+                  and welcoming. We will definitely visit again!
+                </p>
+                <h4>Michael Brown</h4>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <p>
+                  Truly one of the best dining experiences we’ve had. Delicious
+                  drinks, premium ambiance, and outstanding staff.
+                </p>
+                <h4>Sarah Johnson</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM SECTION ================= -->
+<section class="team-section">
+<!-- Decorative Shapes -->
+<div class="team-shape team-shape-1"></div>
+<div class="team-shape team-shape-2"></div>
+<div class="team-shape team-shape-3"></div>
+  <div class="team-header">
+    <span class="team-subtitle">Talent & Experience</span>
+    <h2>TEAM MEMBERS</h2>
+  </div>
+
+  <div class="team-container">
+
+    <!-- Member 1 -->
+    <div class="team-card">
+      <div class="team-img">
+        <img src="./images/chef1.jpg" alt="">
+      </div>
+      <div class="team-content">
+        <h4>ALEXA BLISS</h4>
+        <span>Cook</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="team-card">
+      <div class="team-img">
+        <img src="./images/chef2.jpg" alt="">
+      </div>
+      <div class="team-content">
+        <h4>JOSEPH PRIT</h4>
+        <span>Cook</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="team-card">
+      <div class="team-img">
+        <img src="./images/chef3.jpg" alt="">
+      </div>
+      <div class="team-content">
+        <h4>JOHN ROZARIO</h4>
+        <span>Cook</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CATERING SECTION ================= -->
+<section class="catering-section">
+
+  <div class="catering-overlay"></div>
+
+  <div class="catering-container">
+
+    <!-- Top Row -->
+    <div class="catering-top">
+
+      <div class="follow-us">
+        <span>Follow Us On</span>
+        <div class="social-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+
+      <div class="brand-name">
+        <h2>SUN CATERING</h2>
+      </div>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Enter Email Address">
+        <button><i class="bi bi-send"></i></button>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Bottom Row -->
+    <div class="catering-bottom">
+
+      <div class="footer-col">
+        <h4>ADDRESS</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. Erat a metus egestas sed blandit at elementum.</p>
+      </div>
+
+      <div class="footer-col center">
+        <h4>Open Timing</h4>
+        <p>Monday - Friday</p>
+        <p>7 a.m. - 10 p.m.</p>
+        <p>(Breakfast, Lunch, Dinner)</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <p><i class="bi bi-geo-alt"></i> Lorem ipsum dolor sit amet consectetur.</p>
+        <p><i class="bi bi-telephone"></i> Lorem ipsum dolor sit amet consectetur.</p>
+        <p><i class="bi bi-envelope"></i> Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+   <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS (LOAD FIRST) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".testimonialSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
