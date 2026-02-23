@@ -1463,11 +1463,12 @@ body {
   position: relative;
   z-index: 2;
 }
-/* ================= CATERING SECTION ================= */
 
+/* ================= CATERING SECTION ================= */
 .catering-section {
   position: relative;
   padding: 80px 20px;
+
   background: url("../images/res-footer-bg.jpg") center/cover no-repeat;
   color: #fff;
   overflow: hidden;
