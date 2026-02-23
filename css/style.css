@@ -13,41 +13,41 @@ h2 {
 }
 
 /* ================= NAVBAR ================= */
-
 .custom-navbar {
-  padding: 10px 0;
-  background: rgba(5, 15, 30, 0.6); /* dark blue glass */
+  padding: 12px 0;
+  background: rgba(5, 15, 30, 0.6);
   backdrop-filter: blur(12px);
-  transition: 0.4s ease;
-  border-bottom: 1px solid rgba(120, 180, 255, 0.2); /* soft blue border */
-  height: 90px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(120, 180, 255, 0.2);
+ 
 }
 
 .custom-navbar.scrolled {
-  background: #081423; /* rich navy */
-  padding: 14px 0;
+  background: #081423;
+  padding: 8px 0;
 }
 
+/* LOGO */
 .nav-logo {
-  height: 100px;
-  transition: 0.3s ease;
+  height: 100px !important;
+  transition: all 0.3s ease;
 }
 
 .custom-navbar.scrolled .nav-logo {
-  height: 100px;
+  height: 55px;
 }
 
 /* NAV LINKS */
 .nav-link {
-  color: #e6f2ff !important; /* light silver-blue */
-  margin-left: 30px;
+  color: #e6f2ff !important;
+  margin-left: 28px;
   font-weight: 500;
   position: relative;
   transition: 0.3s ease;
   letter-spacing: 1px;
 }
 
-/* Blue underline animation */
+/* underline animation */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -55,31 +55,25 @@ h2 {
   bottom: -6px;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #3fa9f5, #7fd8ff); /* logo blue gradient */
+  background: linear-gradient(90deg, #3fa9f5, #7fd8ff);
   transition: 0.3s ease;
 }
 
-/* Hover */
 .nav-link:hover {
-  color: #3fa9f5 !important; /* bright logo blue */
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-/* ACTIVE LINK */
-.nav-link.active {
   color: #3fa9f5 !important;
 }
 
+.nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
 }
 
-/* Toggler Icon */
+.nav-link.active {
+  color: #3fa9f5 !important;
+}
+
+/* TOGGLER */
 .navbar-toggler {
-  outline: none;
   border-color: rgba(120, 180, 255, 0.4);
 }
 
@@ -87,15 +81,15 @@ h2 {
   box-shadow: none;
 }
 
-/* ================= MOBILE MENU ================= */
-
+/* ================= MOBILE ================= */
 @media (max-width: 991px) {
+
   .navbar-collapse {
-    background: #081423; /* navy */
-    padding: 20px;
+    background: #081423;
+    padding: 25px;
     margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 80, 160, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 80, 160, 0.3);
   }
 
   .nav-link {
@@ -105,10 +99,13 @@ h2 {
   .nav-link::after {
     display: none;
   }
+
+  .nav-logo {
+    height: 60px;
+  }
 }
 
 /* ================= BUTTON ================= */
-
 .btn-gold {
   background: linear-gradient(135deg, #3fa9f5, #1c6dd0);
   border: none;
