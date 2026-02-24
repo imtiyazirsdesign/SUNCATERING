@@ -5,6 +5,19 @@ body {
   margin: 0;
   background: #f8f9fa;
 }
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+  color: #007bff !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
 /* ================= STICKY NAVBAR ================= */
 
 .sticky-navbar {
@@ -172,6 +185,7 @@ body {
 .btn-book:hover {
   background: #0056d2;
   transform: translateY(-2px);
+    color: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
 }
 

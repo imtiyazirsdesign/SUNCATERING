@@ -71,23 +71,23 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarMenu"
         >
-          <ul class="navbar-nav align-items-lg-center text-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+       <ul class="navbar-nav align-items-lg-center text-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#services">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#menu">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+  </li>
+</ul>
 
           <!-- Mobile Search -->
           <div class="search-box d-lg-none mt-3">
@@ -103,7 +103,7 @@
       </div>
     </nav>
     <!-- ================= HERO SECTION ================= -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="overlay"></div>
 
       <div class="hero-content">
@@ -124,7 +124,7 @@
     </section>
 
     <!-- restaurant-split -->
-    <section class="restaurant-split">
+    <section class="restaurant-split" id="about">
       <!-- LEFT SIDE -->
       <div class="split-left">
         <!-- Decorative Shapes -->
@@ -159,7 +159,7 @@
     </section>
 
     <!-- services-modern -->
-    <section class="services-modern">
+    <section class="services-modern" id="services">
       <!-- LEFT IMAGE -->
       <div class="services-image">
         <img src="./images/resservice.jpg" alt="Restaurant Food" />
@@ -191,7 +191,7 @@
       </div>
     </section>
     <!-- ================= MODERN MENU SECTION ================= -->
-    <section class="menu-modern">
+    <section class="menu-modern" id="menu">
       <div class="menu-container">
         <!-- LEFT CONTENT -->
         <div class="menu-content">
@@ -242,7 +242,7 @@
     </section>
 
     <!-- ================= DRINKS SECTION ================= -->
-    <section class="drinks-section">
+    <section class="drinks-section" >
       <div class="drinks-overlay"></div>
 
       <div class="drinks-content">
@@ -258,7 +258,7 @@
     </section>
 
     <!-- ================= RESERVATION SECTION ================= -->
-    <section class="reservation-section">
+    <section class="reservation-section" id="contact">
       <div class="reservation-overlay"></div>
 
       <div class="reservation-container">
@@ -520,5 +520,32 @@
         });
       });
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function activateMenu() {
+      let scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 120; // adjust for navbar
+        const sectionId = section.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + sectionId) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateMenu);
+  });
+</script>
   </body>
 </html>
