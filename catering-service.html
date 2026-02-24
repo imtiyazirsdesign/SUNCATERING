@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Catering Navbar</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/catering-service.css" />
+  </head>
+  <body>
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-info-bar">
+      <div class="container">
+        <div class="row text-center text-lg-start align-items-center">
+          <div class="col-lg-4 col-12 info-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>123 Catering Street, Kolkata</span>
+          </div>
+
+          <div class="col-lg-4 col-12 info-item">
+            <i class="bi bi-telephone"></i>
+            <span>+91 9876543210</span>
+          </div>
+
+          <div class="col-lg-4 col-12 info-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Sun : 9AM - 10PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg catering-navbar">
+      <div class="container">
+        <!-- Search (Desktop) -->
+        <div class="search-box d-none d-lg-flex">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search Any Queries" />
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#cateringMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="cateringMenu"
+        >
+          <ul class="navbar-nav text-center align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+
+          <!-- Mobile Search -->
+          <div class="search-box d-lg-none mt-3">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Any Queries" />
+          </div>
+
+          <!-- Booking Button -->
+          <a href="#" class="btn-book ms-lg-4 mt-3 mt-lg-0"> For Booking </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- catering-hero -->
+    <section class="catering-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-icon">
+          <i class="bi bi-egg-fried"></i>
+        </div>
+
+        <h1>
+          WELCOME TO OUR <br />
+          <span>CATERING SERVICE</span>
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+        <a href="#" class="hero-btn">View Services</a>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="catering-about">
+      <!-- Decorative Shapes -->
+      <div class="about-shape about-shape-1"></div>
+      <div class="about-shape about-shape-2"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-6">
+            <div class="about-content">
+              <span class="about-subtitle">Why Are You Choosing Us?</span>
+
+              <h2>About Us</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Leo diam in habitasse
+                pellentesque aliquet. Tincidunt vulputate varius ipsum in sit eu
+                tincidunt. Vitae feugiat risus blandit venenatis neque.
+              </p>
+
+              <a href="#" class="about-btn">View Details</a>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="./images/catering-about-img.jpg" alt="About Catering" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COUNTER SECTION ================= -->
+    <section class="catering-counter">
+      <div class="counter-overlay"></div>
+
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6 counter-box">
+            <h2 class="counter" data-target="7000">0</h2>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 counter-box">
+            <h2 class="counter" data-target="1000">0</h2>
+            <p>Awards Won</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 counter-box">
+            <h2 class="counter" data-target="400">0</h2>
+            <p>Services Done</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 counter-box">
+            <h2 class="counter" data-target="800">0</h2>
+            <p>Hours Worked</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- catering-services -->
+    <section class="catering-services">
+      <!-- Right Decorative Shape -->
+      <div class="right-shape"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT IMAGE SIDE -->
+          <div class="col-lg-6 position-relative image-wrapper">
+            <div class="image-large">
+              <img src="./images/catering-waiter.jpg" alt="" />
+            </div>
+
+            <div class="image-small">
+              <img src="./images/catering-chief.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT SIDE -->
+          <div class="col-lg-6 content-side">
+            <span class="section-subtitle">Dedicated to</span>
+
+            <h2>OUR SERVICES</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nisi massa magna dignissim
+              vulputate eu ut aliquet at posuere. Integer mauris urna bibendum
+              sed sit amet ipsum.
+            </p>
+
+            <a href="#" class="btn-services">View Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREMIUM BLOG SECTION ================= -->
+    <section class="catering-blog">
+      <!-- Decorative Shapes -->
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header text-center">
+          <span class="subtitle">Latest News </span>
+          <h2>Our Latest Blog Post</h2>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <!-- Blog Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="./images/catering-blog1.jpg" alt="" />
+              </div>
+              <div class="blog-content">
+                <a href="#" class="blog-tag">PUT DISHES ON PLATE</a>
+                <h4>Proper Cleanliness</h4>
+                <span class="blog-date">March 20, 2025</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Praesent ullamcorper
+                  nisl sed eros egestas volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="./images/catering-blog2.jpg" alt="" />
+              </div>
+              <div class="blog-content">
+                <a href="#" class="blog-tag">PUT DISHES ON PLATE</a>
+                <h4>Proper Serving</h4>
+                <span class="blog-date">March 20, 2025</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Praesent ullamcorper
+                  nisl sed eros egestas volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-img">
+                <img src="./images/catering-blog3.jpg" alt="" />
+              </div>
+              <div class="blog-content">
+                <a href="#" class="blog-tag">PUT DISHES ON PLATE</a>
+                <h4>Proper Timing</h4>
+                <span class="blog-date">March 20, 2025</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Praesent ullamcorper
+                  nisl sed eros egestas volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIAL SECTION ===================== -->
+    <section class="premium-testimonial-area">
+      <div class="parallax-bg"></div>
+      <div class="parallax-overlay"></div>
+
+      <div class="parallax-container">
+        <div class="parallax-header">
+          <span class="blue-subtitle">CLIENT FEEDBACK</span>
+          <h2 class="white-title">What Our Clients Say</h2>
+        </div>
+
+        <div class="swiper cateringTestimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide luxury-slide">
+              <div class="quote-content">
+                <span class="quote-icon">“</span>
+                <p>
+                  The catering service was absolutely exceptional. The
+                  presentation, hygiene, and taste exceeded our expectations.
+                  Our guests were truly impressed.
+                </p>
+
+                <div class="author-box">
+                  <div class="author-img">
+                    <img src="https://i.pravatar.cc/150?u=catering1" alt="" />
+                  </div>
+                  <div class="author-meta">
+                    <h4>ANANYA SHARMA</h4>
+                    <p>EVENT ORGANIZER</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide luxury-slide">
+              <div class="quote-content">
+                <span class="quote-icon">“</span>
+                <p>
+                  Professional team, timely service, and delicious menu options.
+                  Everything was perfectly managed from start to finish.
+                </p>
+
+                <div class="author-box">
+                  <div class="author-img">
+                    <img src="https://i.pravatar.cc/150?u=catering2" alt="" />
+                  </div>
+                  <div class="author-meta">
+                    <h4>RAHUL MEHTA</h4>
+                    <p>BUSINESS OWNER</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lux-pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM SECTION ================= -->
+    <section class="catering-team">
+      <!-- Background Shapes -->
+      <div class="team-shape team-shape-1"></div>
+      <div class="team-shape team-shape-2"></div>
+
+      <div class="container">
+        <!-- Section Header -->
+        <div class="team-header text-center">
+          <span class="team-subtitle">Talent & Experience</span>
+          <h2>Our Professional Staff</h2>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- Member 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./images/caterinh-chief1.jpg" alt="" />
+              </div>
+              <div class="team-content">
+                <h4>Brad Joseph</h4>
+                <span>Team Head</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nisi magna facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./images/catering-chief2.jpg" alt="" />
+              </div>
+              <div class="team-content">
+                <h4>David Miller</h4>
+                <span>Senior Chef</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nisi magna facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card">
+              <div class="team-img">
+                <img src="./images/catering-chief3.jpg" alt="" />
+              </div>
+              <div class="team-content">
+                <h4>John Carter</h4>
+                <span>Service Manager</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nisi magna facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING SECTION ================= -->
+    <section class="premium-booking">
+      <!-- Background Image -->
+      <div class="booking-bg"></div>
+      <div class="booking-overlay"></div>
+
+      <!-- Decorative Shapes -->
+      <div class="booking-shape shape-1"></div>
+      <div class="booking-shape shape-2"></div>
+
+      <div class="container">
+        <div class="booking-wrapper">
+          <!-- Header -->
+          <div class="booking-header text-center">
+            <span class="booking-subtitle">For Your Special Occasions</span>
+            <h2>Booking Calendar</h2>
+          </div>
+
+          <!-- Form -->
+          <form class="booking-form">
+            <div class="row g-4">
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" placeholder="Pick a Date" />
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Full Name" />
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Which Occasion</label>
+                  <select>
+                    <option value="" disabled selected>Pick an occasion</option>
+                    <option>Wedding</option>
+                    <option>Corporate Event</option>
+                    <option>Birthday Party</option>
+                    <option>Private Event</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="Your Email ID" />
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Guests</label>
+                  <input type="number" placeholder="How many of you?" />
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label>Phone No</label>
+                  <input type="tel" placeholder="Enter Your Phone No" />
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <button type="submit" class="booking-btn">Confirm Booking</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="catering-contact">
+      <!-- Background Shapes -->
+      <div class="contact-shape shape-1"></div>
+      <div class="contact-shape shape-2"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT INFO -->
+          <div class="col-lg-4">
+            <div class="contact-brand">
+              <h3>SUN CATERING</h3>
+              <p>
+                We deliver premium catering services for weddings, corporate
+                events, and private celebrations with exceptional taste and
+                presentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- CENTER CONTACT INFO -->
+          <div class="col-lg-4">
+            <div class="contact-info">
+              <h4>For Contact</h4>
+
+              <div class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <span>+91 9903156896</span>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <span>info@sunxyz.com</span>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-geo-alt"></i>
+                <span>Kolkata, West Bengal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SOCIAL -->
+          <div class="col-lg-4">
+            <div class="contact-social">
+              <h4>Follow Us On</h4>
+
+              <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      const speed = 200;
+
+      const startCounting = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+        const increment = target / speed;
+
+        const updateCount = () => {
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.floor(count);
+            requestAnimationFrame(updateCount);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      };
+
+      // Trigger when section is visible
+      const counterSection = document.querySelector(".catering-counter");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            counters.forEach((counter) => startCounting(counter));
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.5 },
+      );
+
+      observer.observe(counterSection);
+    </script>
+
+    <!-- Swiper JS (LOAD FIRST) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper Init -->
+    <script>
+      const testimonialSwiper = new Swiper(".cateringTestimonialSwiper", {
+        loop: true,
+        speed: 1000,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".lux-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
